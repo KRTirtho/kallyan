@@ -1,9 +1,12 @@
+<script lang="ts">
+	import { Router, Route } from 'svelte-routing';
+	import Configure from './pages/configure.svelte';
+</script>
+
 <main>
-	<h2 class="h2">
-		<span
-			class="bg-gradient-to-br from-blue-500 to-cyan-300 bg-clip-text text-transparent box-decoration-clone"
-		>
-			Email App
-		</span>
-	</h2>
+	<Router url="/configure">
+		<div class="p-2">
+			<Route path="/configure"><Configure /></Route>
+		</div>
+	</Router>
 </main>
